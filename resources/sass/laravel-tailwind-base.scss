@@ -1,0 +1,41 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://unpkg.com/tailwindcss/dist/base.css
+ */
+@tailwind base;
+
+/**
+ * Remove the default box-shadow for invalid elements to prevent
+ * inputs in Livewire components showing with a
+ * red border by default in Firefox.
+ *
+ * See: https://github.com/laravel-frontend-presets/tall/issues/7
+ */
+input:invalid, textarea:invalid, select:invalid
+{
+    box-shadow: none;
+}
+
+/**
+* Tweaks a elementos nativos
+*/
+html, body
+{
+    @apply overflow-x-hidden w-screen h-screen font-sans;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    color: white;
+}
+
+img, video
+{
+    max-width: none;
+}
+
+button,
+[type='button']
+{
+    @apply bg-gray-700;
+}

@@ -1,0 +1,23 @@
+/* Fonte de logo */
+@font-face {
+    font-family: 'Akronim';
+    font-style: normal;
+    src: local('Akronim'), url(../assets/fonts/Akronim.ttf) format('truetype');
+}
+
+/* Fonte do site */
+@font-face {
+    font-family: 'Sans Mateo2';
+    font-style: normal;
+    src: local('SansMateo2'), url('../assets/fonts/SansMateo2-Regular.woff2') format('woff2');
+}
+
+@font-face
+{
+
+    font-family: "IcoFont";
+    font-weight: normal;
+    font-style: "Regular";
+    src: url("../assets/fonts/icofont.woff2") format("woff2"),
+    url("../assets/fonts/icofont.woff") format("woff");
+}

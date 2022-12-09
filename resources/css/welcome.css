@@ -1,0 +1,94 @@
+/* FORMATO */
+/*
+.class
+{
+    tamanho posicao alinhamento
+    estilo
+    texto
+    filtros
+    animacões
+}
+*/
+
+/* Contentor full */
+.contentor-full
+{
+    @apply absolute w-screen h-screen;
+}
+
+/* Contentor pre-loader */
+#js-contentor-pre-loader
+{
+    @apply flex flex-col items-center justify-center;
+    background-color: #141C26;
+    z-index: 99999;
+}
+
+/* Contentor welcome */
+#js-contentor-welcome
+{
+    @apply w-screen h-screen;
+    @apply flex flex-col items-center justify-center;
+}
+
+/* Contentor logo */
+#js-contentor-logo
+{
+    @apply h-max w-max relative mb-12;
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+}
+
+/* Contentor image logo */
+#js-contentor-img-logo
+{
+    @apply h-max w-max absolute;
+    opacity: 0;
+}
+
+/* Contentor slogan */
+#js-contentor-slogan
+{
+    @apply h-max w-max relative;
+}
+
+#js-contentor-img-logo button,
+[type='button']
+{
+    background: transparent;
+}
+
+/* Imagem logo */
+#js-contentor-foto #js-img-logo
+{
+    transform: scale(.8);
+}
+
+/* EFEITO GLASS */
+.ui-glass
+{
+    @apply p-4;
+    background: rgba(60, 30, 30, 0.15);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(30, 3, 3, 1);
+    opacity: 0;
+}
+
+/* Slogan */
+h1.slogan
+{
+    @apply text-8xl font-extrabold tracking-widest;
+    color: rgb(74,00,00);
+    text-shadow: 2px 2px 1px rgb(34, 0, 0),
+                -1px -1px 1px rgb(117, 6, 197),
+                2px -1px 1px rgb(224, 220, 226),
+                1px 1px 3px rgb(70, 5, 120);
+}
+.slogan span
+{
+    @apply italic uppercase;
+}

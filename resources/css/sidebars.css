@@ -1,0 +1,135 @@
+/* FORMATO */
+/*
+.class
+{
+    tamanho posicao alinhamento
+    estilo
+    texto
+    filtros
+    animacões
+}
+*/
+/* text-shadow: 5px 5px 5px rgb(26, 1, 47); */
+
+/* Contentor full */
+.contentor-full
+{
+    @apply absolute w-screen h-screen;
+}
+
+/* Contentor pre-loader */
+#js-contentor-pre-loader
+{
+    @apply flex flex-col items-center justify-center;
+    background-color: #141C26;
+    z-index: 99999;
+}
+
+.foto img.gravatar
+{
+    border: 5px solid hsl(272 22% 26%);
+    border-radius: 50%;
+    width: max-content;
+    height: max-content;
+    box-shadow: 0px 0px 20px hsl(268 35% 43%);
+}
+
+.nova-cor
+{
+    color: #fff !important;
+    background-color: hsl(268 35% 43%) !important;
+}
+
+:is(.contactos, .habilitacoes, .competencias)
+{
+    @apply font-thin tracking-widest;
+    padding-top: 2rem;
+}
+
+.nome
+{
+    @apply mb-7 block text-3xl font-thin tracking-widest;
+    text-align: center;
+}
+
+:is(.funcao, .nacionalidade, .email-adress, .mobile, .carta-conducao)
+{
+    @apply block mb-5 text-2xl font-thin tracking-widest;
+}
+
+.media
+{
+    @apply flex flex-row justify-around p-4 pb-6 mt-6 align-middle;
+}
+
+.habilitacoes
+{
+    @apply text-base;
+}
+
+:is(.data, .instituicao, .grau, .nivel, .comp-com, .comp-org, .comp-digit, .comp-outras, .info-plus)
+{
+    display: block;
+}
+.data
+{
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+
+:is(.escolaridade, .skills, .linguas, .competencias-comunicacao, .competencias-organizacao, .competencias-digitais, .competencias-outras, .info-adicional)
+{
+    @apply block text-3xl underline;
+}
+:is(.escolaridade, .skills, .linguas, .competencias-comunicacao, .competencias-organizacao, .competencias-digitais, .competencias-outras, .info-adicional)
+{
+    @apply mb-4;
+}
+:is(.linguas, .competencias-comunicacao, .competencias-organizacao, .competencias-digitais, .competencias-outras, .info-adicional)
+{
+    @apply mt-8;
+}
+.exp-formativa
+{
+    @apply block text-2xl;
+}
+.exp-formativa-list
+{
+    @apply block text-lg;
+    text-indent: 1rem;
+}
+.info-plus
+{
+    @apply text-base;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+.info-plus ul li
+{
+    list-style-type: square;
+}
+
+.nivel-competencias
+{
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.light-grey
+{
+    background-color: #f1f1f1;
+}
+
+/* EFEITO GLASS */
+.ui-glass
+{
+    @apply p-4;
+    background: rgba(3, 1, 64, 0.2);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

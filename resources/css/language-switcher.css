@@ -1,0 +1,57 @@
+/* FORMATO */
+/*
+.class
+{
+    tamanho
+    alinhamento
+    estilo
+    texto
+    filtros
+    animacões
+}
+*/
+
+/* Botão seletor da língua */
+.btnLang
+{
+    @apply h-10;
+    @apply relative right-0 z-0 block;
+    /* overflow-hidden */
+    @apply  text-xl font-semibold text-center text-purple-500 uppercase;
+    @apply w-14 bg-gray-700 border border-purple-500 rounded-sm shadow-lg;
+    width: fill-available;
+}
+.btnLang:hover
+{
+    @apply text-purple-300;
+    @apply bg-gray-600;
+}
+.btnLang:focus
+{
+    @apply outline-none;
+}
+.btnLang:active
+{
+    @apply bg-gray-800;
+}
+/* Links na lista de línguas */
+.langList
+{
+    @apply py-2 mt-1;
+    @apply absolute;
+    @apply bg-gray-800 rounded-sm;
+    @apply shadow-xl;
+    right: -1px;
+    /* width: 23.4rem; */
+    width: fill-available;
+}
+.langLink
+{
+    @apply block px-4 py-2;
+    @apply font-semibold text-gray-500;
+}
+.langLink:hover
+{
+    @apply bg-purple-800;
+    @apply text-gray-300;
+}

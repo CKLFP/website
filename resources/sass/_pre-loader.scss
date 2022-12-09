@@ -1,0 +1,157 @@
+.pre-loader
+{
+  @apply fixed;
+  width: 150px;
+  height: 150px;
+
+  &:before
+  {
+    @apply block absolute;
+    content: '';
+    width: 164px;
+    height: 164px;
+    border: 2px solid #898a86;
+    border-radius: 50%;
+    box-sizing: border-box;
+    clip: rect(0px, 35px, 35px, 0px);
+    animation: rotate infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+  }
+  &:after
+  {
+    @apply block absolute;
+    content: '';
+    width: 164px;
+    height: 164px;
+    border: 2px solid #c1bebb;
+    border-radius: 50%;
+    box-sizing: border-box;
+    clip: rect(0px, 164px, 150px, 0px);
+    animation: rotate2 3s linear infinite;
+  }
+}
+
+.hexagon-container
+{
+  @apply relative;
+  top: 33px;
+  left: 41px;
+  border-radius: 50%;
+}
+
+.hexagon
+{
+  @apply absolute;
+  width: 40px;
+  height: 23px;
+  background-color: #556C82;
+  &:before
+  {
+    @apply absolute left-0 w-0 h-0;
+    content: "";
+    top: -11px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 11.5px solid #556C82;
+  }
+  &:after
+  {
+    @apply absolute left-0 w-0 h-0;
+    content: "";
+    top: 23px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 11.5px solid #556C82;
+  }
+}
+
+@each $index,
+$top,
+$left in (1, 0px, 0px),
+(2, 0px, 42px),
+(3, 36px, 63px),
+(4, 72px, 42px),
+(5, 72px, 0px),
+(6, 36px, -21px),
+(7, 36px, 21px) {
+  $time: 3s; // thx to @zeakd for this formula
+  $delay: calc($time / 14);
+  .hexagon.hex_#{$index}
+  {
+    top: $top;
+    left: $left;
+    //cubic-bezier(.155,1.105,.295,1.12)
+    animation: Animasearch $time ease-in-out infinite;
+    animation-delay: calc($delay*$index);
+  }
+}
+
+@keyframes Animasearch
+{
+  0%
+  {
+    transform: scale(1);
+    opacity: 1;
+  }
+  15%,
+  50%
+  {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  65%
+  {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate
+{
+  0%
+  {
+    transform: rotate(0);
+    clip: rect(0px, 35px, 35px, 0px);
+  }
+  50%
+  {
+    clip: rect(0px, 40px, 40px, 0px);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+    clip: rect(0px, 35px, 35px, 0px);
+  }
+}
+
+@keyframes rotate2
+{
+  0%
+  {
+    transform: rotate(0deg);
+    clip: rect(0px, 164px, 150px, 0px);
+  }
+  50%
+  {
+    clip: rect(0px, 164px, 0px, 0px);
+    transform: rotate(360deg);
+  }
+  100%
+  {
+    transform: rotate(720deg);
+    clip: rect(0px, 164px, 150px, 0px);
+  }
+}
+
+@keyframes rotate3
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,12 @@
+ /* CLASSE PRELOADER */
+ @use 'pre-loader.scss';
+
+ /* CLASSES TAILWIND */
+ @use 'laravel-tailwind-base.scss';
+ @use 'laravel-tailwind-components.scss';
+
+ /* AS MINHAS CLASSES */
+ @use 'cklfp-custom-classes.scss';
+
+ /* CLASSES TAILWIND */
+ @use 'laravel-tailwind-utilities.scss';

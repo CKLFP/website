@@ -1,0 +1,252 @@
+.titulo h1
+{
+    @apply text-6xl font-extrabold tracking-widest text-center text-white;
+    text-shadow: 4px 4px 8px hsl(268 35% 43%);
+}
+
+section#timeline
+{
+    width: fill-available;
+    margin: 2rem auto;
+    position: relative;
+}
+
+section#timeline:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 8%;
+    top: 0;
+    margin: 0 0 0 9px;
+    width: 2px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+section#timeline article
+{
+    width: 100%;
+    margin: 0 0 50px 0;
+    position: relative;
+    display: inline-flex;
+}
+
+section#timeline article:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+section#timeline article div.inner
+{
+    width: 21%;
+    margin: 5px 0 0 0;
+    border-radius: 2px;
+}
+
+section#timeline article div.work-exp img.cnc-icon
+{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 3px;
+    right: 18px;
+}
+section#timeline article div.work-exp
+{
+    justify-self: right;
+    margin-right: 1rem;
+    width: fill-available;
+    margin-left: 1.5rem;
+}
+section#timeline article div.inner span.date
+{
+    display: block;
+    width: 80px;
+    height: 152px;
+    padding: 10px 0 0 0;
+    position: absolute;
+    /* top: 0; */
+    left: 8%;
+    margin: 0 0 0 -32px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #25303B;
+    color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 7px #25303B;
+}
+
+section#timeline article div.inner span.date span
+{
+    display: block;
+    text-align: center;
+}
+
+section#timeline article div.inner span.date span.day
+{
+    font-size: 10px;
+}
+
+section#timeline article div.inner span.date span.month
+{
+    font-size: 18px;
+}
+
+section#timeline article div.inner span.date span.year
+{
+    font-size: 10px;
+}
+
+section#timeline article div.work-exp span.funcao
+{
+    padding: 8px 15px 0px 15px;
+    margin: 0;
+    /* margin-bottom: 5px; */
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* letter-spacing: -1px; */
+    border-radius: 2px 2px 0 0;
+    position: relative;
+}
+section#timeline article div.work-exp span.company
+{
+    padding: 0 15px 0px 15px;
+    margin: -5px 0 0 0;
+    /* margin-bottom: 10px; */
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-style: italic;
+    /* letter-spacing: -1px; */
+    border-radius: 2px 2px 0 0;
+    position: absolute;
+}
+
+
+
+section#timeline article div.work-exp ul
+{
+    padding: 15px;
+    padding-left: 2rem;
+    margin: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #656565;
+    border-radius: 0 0 2px 2px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+section#timeline article div.work-exp ul li
+{
+
+    list-style-type: square;
+}
+
+section#timeline article:nth-child(2n+2) div.work-exp
+{
+    float: right;
+}
+
+
+
+section#timeline article:nth-child(1) div.work-exp .head
+{
+    background: #523b79;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: 2px 2px 0 0;
+}
+
+section#timeline article:nth-child(1) div.work-exp .head:after
+{
+    background: #523b79;
+}
+
+section#timeline article:nth-child(2) div.work-exp .head
+{
+    background: #46356c;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: 2px 2px 0 0;
+}
+
+section#timeline article:nth-child(2) div.work-exp .head:after
+{
+    background: #46356c;
+}
+
+section#timeline article:nth-child(3) div.work-exp .head
+{
+    background: #3a305e;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: 2px 2px 0 0;
+}
+
+section#timeline article:nth-child(3) div.work-exp .head:after
+{
+    background: #3a305e;
+}
+
+section#timeline article:nth-child(4) div.work-exp .head
+{
+    background: #2e2a51;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: 2px 2px 0 0;
+}
+
+section#timeline article:nth-child(4) div.work-exp .head:after
+{
+    background: #2e2a51;
+}
+
+em
+{
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: -10px;
+}
+
+section#timeline article:nth-child(4) div.work-exp img.cnc-icon
+{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 15px;
+    right: 18px;
+}
+
+section#timeline article:nth-child(5) div.work-exp .head
+{
+    background: #e74c3c;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: 2px 2px 0 0;
+}
+
+section#timeline article:nth-child(5) div.work-exp .head:after
+{
+    background: #e74c3c;
+}
+
+section#timeline article:nth-child(6) div.work-exp .head
+{
+    background: #e74c3c;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: 2px 2px 0 0;
+}
+
+section#timeline article:nth-child(6) div.work-exp .head:after
+{
+    background: #e74c3c;
+}

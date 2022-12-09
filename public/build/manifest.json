@@ -1,0 +1,31 @@
+{
+  "resources/js/welcome.js": {
+    "file": "assets/welcome.6dd927c2.js",
+    "src": "resources/js/welcome.js",
+    "isEntry": true,
+    "imports": [
+      "_anime.es.729cdde2.js"
+    ]
+  },
+  "resources/js/cklfp.js": {
+    "file": "assets/cklfp.42e3f124.js",
+    "src": "resources/js/cklfp.js",
+    "isEntry": true,
+    "imports": [
+      "_anime.es.729cdde2.js"
+    ]
+  },
+  "_anime.es.729cdde2.js": {
+    "file": "assets/anime.es.729cdde2.js"
+  },
+  "resources/sass/welcome-loader.scss": {
+    "file": "assets/welcome-loader.e060a716.css",
+    "src": "resources/sass/welcome-loader.scss",
+    "isEntry": true
+  },
+  "resources/sass/cklfp-loader.scss": {
+    "file": "assets/cklfp-loader.fa4df2fa.css",
+    "src": "resources/sass/cklfp-loader.scss",
+    "isEntry": true
+  }
+}
