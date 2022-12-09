@@ -13,10 +13,10 @@
         <!-- Favicons -->
         <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
 
-        <!-- SCSS's -->
+        <!-- CSS's -->
         @vite(
             [
-                'resources/sass/welcome-loader.scss',
+                'assets/css/welcome-loader.css',
             ])
 
         <!-- CSRF Token -->
@@ -34,7 +34,7 @@
         <!-- JS's -->
         @vite(
             [
-                'resources/js/welcome.js'
+                'assets/js/welcome.js'
             ])
 
     </body>

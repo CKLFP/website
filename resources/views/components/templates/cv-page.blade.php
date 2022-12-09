@@ -11,7 +11,7 @@
         @endif
 
         <!-- Favicons -->
-        <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+        <link rel="shortcut icon" href="favicon.ico">
 
         <!-- SCSS's -->
         @vite(
