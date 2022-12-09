@@ -12,6 +12,7 @@
 
         <!-- Favicons -->
         <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+        <link rel="stylesheet" href="{{ url('assets/css/welcome-loader.css') }}">
 
         <!-- SCSS's -->
         @vite(
