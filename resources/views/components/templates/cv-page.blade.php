@@ -12,13 +12,13 @@
 
         <!-- Favicons -->
         <link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
-        <link rel="stylesheet" href="{{ url('assets/css/welcome-loader.css') }}">
+        <link rel="stylesheet" href="{{ url('assets/css/cklfp-loader.css') }}">
 
         <!-- SCSS's -->
-        @vite(
+        {{-- @vite(
             [
                 'resources/sass/cklfp-loader.scss',
-            ])
+            ]) --}}
 
         @livewireStyles
 
@@ -36,10 +36,11 @@
 
         @livewireScripts
         <!-- JS's -->
-        @vite(
+        <script src="{{ url('assets/js/cklfp.js') }}"></script>
+        {{-- @vite(
             [
                 'resources/js/cklfp.js'
-            ])
+            ]) --}}
 
     </body>
 </html>
